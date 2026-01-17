@@ -29,6 +29,7 @@ func main() {
 			fmt.Println("   n -v,--version  -  show n version")
 			fmt.Println("   n -h,--help     -  show compiler commands list")
 			fmt.Println("   n init          -  create new project")
+			fmt.Println("   n build         -  build project")
 		}
 	}
 }
