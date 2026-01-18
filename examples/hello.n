@@ -1,4 +1,4 @@
-import io;
+use io;
 
 fun main(){
     print("hello world!");

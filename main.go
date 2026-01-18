@@ -23,6 +23,8 @@ func main() {
 			fmt.Println("n", VERSION)
 		case "init":
 			initProject()
+		case "build":
+			buildProject()
 		case "--help", "-h":
 			fmt.Println("n compiler commands:")
 			fmt.Println("   n               -  show about message")
