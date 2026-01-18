@@ -39,9 +39,9 @@ func main() {
 func initProject() {
 	module_name := filepath.Base(func() string { d, _ := os.Getwd(); return d }())
 
-	config_file_name := "n.mod"
-	config_content := "module " + module_name + "\n\n" +
-		"n " + VERSION + "\n"
+	config_file_name := "n.config"
+	config_content := "module = \"" + module_name + "\"\n\n" +
+		"n-version = \"" + VERSION + "\"\n"
 
 	config_file, err := os.OpenFile(config_file_name, os.O_CREATE|os.O_EXCL|os.O_WRONLY, 0644)
 
@@ -61,6 +61,6 @@ func initProject() {
 		os.Exit(1)
 	}
 
-	fmt.Printf("n: created new %s: module %s\n", config_file_name, module_name)
+	fmt.Printf("created %s\n", config_file_name)
 
 }
